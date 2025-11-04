@@ -1,9 +1,9 @@
 from player_reader import PlayerReader
-
+from player_reader_stub import PlayerReaderStub
 
 
 class StatisticsService:
-    def __init__(self, lukija: PlayerReader):
+    def __init__(self, lukija):
         reader = lukija
 
         self._players = reader.get_players()
